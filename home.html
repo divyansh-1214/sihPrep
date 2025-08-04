@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hackathon Platform</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        /* Custom styles for a modern feel */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Custom scrollbar for a polished look */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #1a202c; /* dark:bg-gray-800 */
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #4a5568; /* dark:bg-gray-600 */
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #718096; /* dark:bg-gray-500 */
+        }
+    </style>
+</head>
+<body class="bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-300">
+
+    <!-- Header/Navigation -->
+    <!-- <header class="bg-white/80 dark:bg-gray-800/80 backdrop-blur-md shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-indigo-600 dark:text-indigo-400">
+                HackaFlow
+            </div>
+            <div class="flex items-center space-x-4">
+                <a href="#" class="text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">Dashboard</a>
+                <a href="#" class="text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">Profile</a>
+                <a href="#" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded-lg transition-transform transform hover:scale-105">
+                    Log Out
+                </a>
+            </div>
+        </nav>
+    </header> -->
+
+    <!-- Main Content -->
+    <main class="container max-w-[60rem] mx-auto px-6 py-12">
+
+        <!-- Hero Section -->
+        <section class="text-center py-16">
+            <h1 class="text-5xl md:text-6xl font-extrabold tracking-tight mb-4">
+                Build the Future, <span class="text-indigo-600 dark:text-indigo-400">Together.</span>
+            </h1>
+            <p class="text-lg text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
+                Your all-in-one platform to collaborate, evaluate ideas with AI, and bring your hackathon projects to life.
+            </p>
+        </section>
+
+        <!-- Core Functionality Sections -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
+            <!-- 1. Create Team Section -->
+            <div class="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-lg border border-gray-200 dark:border-gray-700 transform hover:-translate-y-2 transition-transform duration-300">
+                <div class="flex items-center justify-center h-16 w-16 rounded-full bg-indigo-100 dark:bg-indigo-900/50 mb-6">
+                     <svg class="w-8 h-8 text-indigo-600 dark:text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                </div>
+                <h2 class="text-2xl font-bold mb-3">Create Your Team</h2>
+                <p class="text-gray-600 dark:text-gray-400 mb-6">Assemble your dream team and start collaborating in a shared workspace.</p>
+                <button class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-4 rounded-lg transition-all transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 dark:focus:ring-offset-gray-800">
+                    Form a Team
+                </button>
+            </div>
+
+            <!-- 2. Evaluate Problem Statement Section -->
+            <div class="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-lg border border-gray-200 dark:border-gray-700 transform hover:-translate-y-2 transition-transform duration-300 lg:col-span-2">
+                <div class="flex items-center justify-center h-16 w-16 rounded-full bg-indigo-100 dark:bg-indigo-900/50 mb-6">
+                    <svg class="w-8 h-8 text-indigo-600 dark:text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path></svg>
+                </div>
+                <h2 class="text-2xl font-bold mb-3">Evaluate Problem Statement</h2>
+                <p class="text-gray-600 dark:text-gray-400 mb-6">Get instant, AI-powered feedback on your problem statement to refine your focus and approach.</p>
+                <button  class="mt-4 w-full bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-4 rounded-lg transition-all transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 dark:focus:ring-offset-gray-800">
+                    Evaluate with AI
+                </button>
+                <!-- AI Feedback Area -->
+                <div id="evaluation-result" class="mt-6 p-4 bg-gray-100 dark:bg-gray-700/50 rounded-lg hidden">
+                    <h4 class="font-semibold text-lg mb-2">AI Feedback:</h4>
+                    <p id="feedback-text" class="text-gray-700 dark:text-gray-300"></p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- 3. Start Analysis Call to Action -->
+        <section class="mt-20 text-center bg-white dark:bg-gray-800 p-12 rounded-2xl shadow-xl border border-gray-200 dark:border-gray-700">
+            <h2 class="text-4xl font-bold mb-4">Ready to Begin?</h2>
+            <p class="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto mb-8">
+                Once your team is formed and your idea is validated, it's time to dive deep. Start your project analysis and build your solution.
+            </p>
+            <button class="bg-indigo-600 hover:bg-indigo-700 text-white font-extrabold py-4 px-10 text-lg rounded-full transition-all transform hover:scale-105 focus:outline-none focus:ring-4 focus:ring-offset-2 focus:ring-indigo-500 dark:focus:ring-offset-gray-800 shadow-lg hover:shadow-indigo-500/50">
+                Start Analysis
+            </button>
+        </section>
+    </main>
+</body>
+</html>
